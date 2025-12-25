@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ikamva Lethu Skills Center | Available Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-bY6I0n8B6S1c8x3a1oGVOlJawVSdGInxjeRGna43EIBgzHuLlHotE5RX7V6czS4QhIwTZPIYOvTo95OfzmiGAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: '#0f4c81',
+            gold: '#f2b705',
+            'brand-light': '#e8f1fb'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white text-slate-900">
+  <div class="min-h-screen flex flex-col">
+    <header class="border-b border-slate-200 bg-white/80 backdrop-blur-md sticky top-0 z-30">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/logo.webp" alt="Ikamva Lethu Skills Center logo" class="h-32 w-32 object-contain">
+        </a>
+        <nav>
+          <button id="nav-toggle" class="sm:hidden p-2 rounded-lg border border-slate-200 text-slate-700" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="nav-links" class="hidden sm:flex gap-6 font-medium text-sm items-center">
+            <li><a class="nav-link text-brand" href="index.html">Home</a></li>
+            <li><a class="nav-link hover:text-brand" href="about.html">About</a></li>
+            <li><a class="nav-link hover:text-brand" href="courses.html">Available Courses</a></li>
+            <li><a class="nav-link hover:text-brand" href="donate.html">Donate</a></li>
+            <li><a class="nav-link hover:text-brand" href="contact.html">Contact Us</a></li>
+            <li><a class="px-4 py-2 bg-gold text-slate-900 rounded-full shadow-sm hover:shadow-md transition" href="registration.html">Register Now</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="sm:hidden hidden border-t border-slate-200 bg-white">
+        <div class="px-4 py-3 space-y-3 text-sm font-medium">
+          <a class="block nav-link text-brand" href="index.html">Home</a>
+          <a class="block nav-link" href="about.html">About</a>
+          <a class="block nav-link" href="courses.html">Available Courses</a>
+          <a class="block nav-link" href="registration.html">Registration</a>
+          <a class="block nav-link" href="donate.html">Donate</a>
+          <a class="block nav-link" href="contact.html">Contact Us</a>
+          <a class="block text-center px-4 py-2 bg-gold text-slate-900 rounded-full shadow-sm" href="donate.html">Support</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 via-white to-gold/10 pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 relative space-y-4">
+          <p class="text-sm font-semibold text-brand uppercase tracking-wide">Available courses</p>
+          <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">Pathways designed with employers for real-world readiness.</h1>
+          <p class="text-lg text-slate-700 max-w-3xl">Each pathway blends technical skills, soft skills, and hands-on projects. Learners graduate with portfolio pieces and interview coaching to confidently enter the workplace.</p>
+          <div class="flex gap-3 flex-wrap pt-2">
+            <span class="px-4 py-2 rounded-full bg-white border border-brand/20 text-brand text-sm font-semibold flex items-center gap-2"><i class="fa-solid fa-clock"></i> 10-16 weeks</span>
+            <span class="px-4 py-2 rounded-full bg-white border border-brand/20 text-brand text-sm font-semibold flex items-center gap-2"><i class="fa-solid fa-user-group"></i> Small cohorts</span>
+            <span class="px-4 py-2 rounded-full bg-white border border-brand/20 text-brand text-sm font-semibold flex items-center gap-2"><i class="fa-solid fa-briefcase"></i> Placement support</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 space-y-10">
+
+        <!-- Tabs -->
+        <div class="flex flex-wrap gap-3 justify-center mb-8">
+
+          <button class="tab-btn active" data-tab="all">
+            All
+          </button>
+        
+          <button class="tab-btn" data-tab="it">Information Technology Support</button>
+          <button class="tab-btn" data-tab="cloud">Cloud Computing</button>
+          <button class="tab-btn" data-tab="cyber">Cybersecurity</button>
+          <button class="tab-btn" data-tab="software">Software Development</button>
+          <button class="tab-btn" data-tab="networking">Networking & Infrastructure</button>
+          <button class="tab-btn" data-tab="digital">Digital Literacy</button>
+        </div>
+              
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      
+          <!-- IT Support -->
+          <div class="course-card" data-category="it">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-600">Technology</p>
+                  <p class="font-semibold text-lg text-slate-900">IT Support</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-700">Foundations of hardware, software, troubleshooting, and user support.</p>
+              <ul class="text-sm text-slate-700 space-y-2">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Helpdesk fundamentals</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Device & OS support</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Entry-level IT roles</li>
+              </ul>
+              <a href="registration.html" class="mt-auto inline-flex items-center gap-2 text-brand font-semibold">
+                Apply now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Cloud -->
+          <div class="course-card" data-category="cloud">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-lg bg-gold/20 text-brand flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-cloud"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-600">Cloud</p>
+                  <p class="font-semibold text-lg text-slate-900">Cloud Computing Fundamentals</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-700">Intro to cloud platforms, services, and deployment models.</p>
+              <ul class="text-sm text-slate-700 space-y-2">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> AWS & Azure basics</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Virtual machines & storage</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Cloud career pathways</li>
+              </ul>
+              <a href="registration.html" class="mt-auto inline-flex items-center gap-2 text-brand font-semibold">
+                Apply now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Cybersecurity -->
+          <div class="course-card" data-category="cyber">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-600">Security</p>
+                  <p class="font-semibold text-lg text-slate-900">Cybersecurity Essentials</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-700">Core security principles, threat awareness, and cyber hygiene.</p>
+              <ul class="text-sm text-slate-700 space-y-2">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Network security basics</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Risk & compliance</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Entry-level security roles</li>
+              </ul>
+              <a href="registration.html" class="mt-auto inline-flex items-center gap-2 text-brand font-semibold">
+                Apply now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Software -->
+          <div class="course-card" data-category="software">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-lg bg-gold/20 text-brand flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-600">Development</p>
+                  <p class="font-semibold text-lg text-slate-900">Software Development Basics</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-700">Programming logic, web fundamentals, and real-world projects.</p>
+              <ul class="text-sm text-slate-700 space-y-2">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> HTML, CSS, JavaScript</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Git & version control</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Junior developer roles</li>
+              </ul>
+              <a href="registration.html" class="mt-auto inline-flex items-center gap-2 text-brand font-semibold">
+                Apply now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Networking -->
+          <div class="course-card" data-category="networking">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-600">Infrastructure</p>
+                  <p class="font-semibold text-lg text-slate-900">Networking & Infrastructure</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-700">Routing, switching, cabling, and network troubleshooting.</p>
+              <ul class="text-sm text-slate-700 space-y-2">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> LAN & WAN fundamentals</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Hardware configuration</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Entry networking roles</li>
+              </ul>
+              <a href="registration.html" class="mt-auto inline-flex items-center gap-2 text-brand font-semibold">
+                Apply now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Digital Literacy -->
+          <div class="course-card" data-category="digital">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-lg bg-gold/20 text-brand flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-600">Foundations</p>
+                  <p class="font-semibold text-lg text-slate-900">Digital Literacy & Productivity</p>
+                </div>
+              </div>
+              <p class="text-sm text-slate-700">Essential computer skills, online tools, and workplace readiness.</p>
+              <ul class="text-sm text-slate-700 space-y-2">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Office tools & email</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Digital communication</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Workplace readiness</li>
+              </ul>
+              <a href="registration.html" class="mt-auto inline-flex items-center gap-2 text-brand font-semibold">
+                Apply now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!-- Tabs Script -->
+      <script>
+        const tabs = document.querySelectorAll(".tab-btn");
+        const cards = document.querySelectorAll(".course-card");
+      
+        tabs.forEach(tab => {
+          tab.addEventListener("click", () => {
+            // Reset active states
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+      
+            const selected = tab.dataset.tab;
+      
+            cards.forEach(card => {
+              if (selected === "all" || card.dataset.category === selected) {
+                card.style.display = "flex";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+      </script>
+            
+      <section class="bg-brand text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <h3 class="text-2xl font-bold">Not sure which pathway fits you?</h3>
+            <p class="text-brand-light mt-2">Book a guidance call with our team to map your goals to the right course.</p>
+          </div>
+          <div class="flex gap-3">
+            <a href="contact.html" class="px-5 py-3 bg-gold text-slate-900 rounded-full font-semibold shadow-md hover:-translate-y-0.5 transition">Talk to us</a>
+            <a href="registration.html" class="px-5 py-3 border border-white/60 rounded-full font-semibold hover:bg-white/10 transition">Start registration</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white text-slate-900">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-4">
+    
+        <!-- Brand / About -->
+        <div class="md:col-span-2 space-y-5">
+          <div class="flex items-center gap-4">
+            <img 
+              src="images/logo.webp" 
+              alt="Ikamva Lethu Skills Center logo" 
+              class="h-28 w-auto object-contain"
+            >
+          </div>
+    
+          <p class="text-sm text-slate-600 max-w-xl leading-relaxed">
+            Ikamva Lethu Skills Center is committed to transforming rural communities through world-class skills development. With strong global partnerships and a mission-driven leadership team, we are positioned to become a powerful engine of opportunity for rural youth in South Africa.
+          </p>
+    
+        </div>
+    
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-slate-900 font-semibold mb-4">Explore</h4>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li><a href="about.html" class="hover:text-gold transition">About Us</a></li>
+            <li><a href="courses.html" class="hover:text-gold transition">Courses</a></li>
+            <li><a href="registration.html" class="hover:text-gold transition">Registration</a></li>
+            <li><a href="donate.html" class="hover:text-gold transition">Donate</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition">Contact</a></li>
+          </ul>
+        </div>
+    
+        <!-- Contact -->
+        <div>
+          <h4 class="text-slate-900 font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li class="flex gap-3">
+              <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+              <span>Ngubezulu Primary School Ku Hala, Butter Worth, Eastern Cape</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-envelope text-gold mt-1"></i>
+              <span>info@ikamvalethu.org</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-phone text-gold mt-1"></i>
+              <span>+27 12 345 6789</span>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    
+      <!-- Bottom Bar -->
+      <div class="border-t border-slate-200 py-4 text-center text-sm text-slate-500">
+        © <span id="year"></span> Ikamva Lethu Skills Center. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <style>
+    .tab-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid #e5e7eb;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #334155;
+      background: white;
+      transition: all 0.2s ease;
+    }
+  
+    .tab-btn:hover {
+      background-color: #f1f5f9;
+    }
+  
+    .tab-btn.active {
+      background-color: #f2b705; /* brand */
+      color: white;
+      border-color: #f2b705;
+    }
+  </style>
+  
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const current = location.pathname.split('/').pop() || 'courses.html';
+    document.querySelectorAll('.nav-link').forEach(link => {
+      if (link.getAttribute('href') === current) {
+        link.classList.add('text-brand', 'font-semibold');
+      }
+    });
+  </script>
+</body>
+</html>
+

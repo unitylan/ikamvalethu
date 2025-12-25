@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ikamva Lethu Skills Center | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-bY6I0n8B6S1c8x3a1oGVOlJawVSdGInxjeRGna43EIBgzHuLlHotE5RX7V6czS4QhIwTZPIYOvTo95OfzmiGAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: '#0f4c81',
+            gold: '#f2b705',
+            'brand-light': '#e8f1fb'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white text-slate-900">
+  <div class="min-h-screen flex flex-col">
+    <header class="border-b border-slate-200 bg-white/80 backdrop-blur-md sticky top-0 z-30">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/logo.webp" alt="Ikamva Lethu Skills Center logo" class="h-32 w-32 object-contain">
+        </a>
+        <nav>
+          <button id="nav-toggle" class="sm:hidden p-2 rounded-lg border border-slate-200 text-slate-700" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="nav-links" class="hidden sm:flex gap-6 font-medium text-sm items-center">
+            <li><a class="nav-link text-brand" href="index.html">Home</a></li>
+            <li><a class="nav-link hover:text-brand" href="about.html">About</a></li>
+            <li><a class="nav-link hover:text-brand" href="courses.html">Available Courses</a></li>
+            <li><a class="nav-link hover:text-brand" href="donate.html">Donate</a></li>
+            <li><a class="nav-link hover:text-brand" href="contact.html">Contact Us</a></li>
+            <li><a class="px-4 py-2 bg-gold text-slate-900 rounded-full shadow-sm hover:shadow-md transition" href="registration.html">Register Now</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="sm:hidden hidden border-t border-slate-200 bg-white">
+        <div class="px-4 py-3 space-y-3 text-sm font-medium">
+          <a class="block nav-link text-brand" href="index.html">Home</a>
+          <a class="block nav-link" href="about.html">About</a>
+          <a class="block nav-link" href="courses.html">Available Courses</a>
+          <a class="block nav-link" href="registration.html">Registration</a>
+          <a class="block nav-link" href="donate.html">Donate</a>
+          <a class="block nav-link" href="contact.html">Contact Us</a>
+          <a class="block text-center px-4 py-2 bg-gold text-slate-900 rounded-full shadow-sm" href="donate.html">Support</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 via-white to-gold/10 pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand/10 text-brand text-sm font-semibold">
+                <i class="fa-solid fa-graduation-cap"></i> Empowering Youth Skills
+              </span>
+              <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">
+                Building a skilled future through practical, community-driven learning.
+              </h1>
+              <p class="text-lg text-slate-700 leading-relaxed">
+                Ikamva Lethu Skills Center equips young people with industry-aligned skills, mentorship, and pathways to meaningful opportunities across the Eastern Cape.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a href="registration.html" class="px-6 py-3 bg-brand text-white rounded-full shadow-lg shadow-brand/30 hover:-translate-y-0.5 transition">
+                  Register for a course
+                </a>
+                <a href="donate.html" class="px-6 py-3 border border-brand text-brand rounded-full hover:bg-brand/10 transition">
+                  Donate to our mission
+                </a>
+              </div>
+              <div class="flex gap-8 pt-4">
+                <div>
+                  <p class="text-3xl font-bold text-brand">1,200+</p>
+                  <p class="text-sm text-slate-600">Learners supported</p>
+                </div>
+                <div>
+                  <p class="text-3xl font-bold text-brand">25</p>
+                  <p class="text-sm text-slate-600">Partner organizations</p>
+                </div>
+                <div>
+                  <p class="text-3xl font-bold text-brand">8</p>
+                  <p class="text-sm text-slate-600">Specialized pathways</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-xl shadow-brand/10 p-8 space-y-6">
+              <div class="flex items-center gap-3">
+                <div class="h-12 w-12 rounded-xl bg-gold/20 text-brand flex items-center justify-center text-2xl">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-slate-600">Featured Pathway</p>
+                  <p class="font-semibold text-lg text-slate-900">Cybersecurity Essentials</p>
+                </div>
+              </div>
+              <p class="text-slate-700 leading-relaxed">
+                Learn core security principles, cyber hygiene, and threat awareness. Graduates gain practical skills to start careers in entry-level cybersecurity roles.
+              </p>
+              <ul class="space-y-3 text-sm text-slate-700">
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Network security basics</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Risk assessment & compliance fundamentals</li>
+                <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Hands-on threat simulation exercises</li>
+              </ul>
+              <a href="courses.html" class="inline-flex items-center gap-2 text-brand font-semibold">
+                Explore all courses <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-brand-light">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-10">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+            <div>
+              <p class="text-sm font-semibold text-brand uppercase tracking-wide">What we offer</p>
+              <h2 class="text-3xl font-bold text-slate-900">Practical pathways aligned to employer needs</h2>
+            </div>
+            <a href="about.html" class="inline-flex items-center gap-2 text-brand font-semibold">
+              Learn about our model <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-people-group"></i></div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Mentorship & Coaching</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">Career mentors guide learners with CV reviews, interview practice, and professional etiquette to accelerate placement success.</p>
+            </div>
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-gold/20 text-brand flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Digital & Technical Skills</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">From digital literacy to creative suites and coding fundamentals, our labs ensure learners are workplace-ready.</p>
+            </div>
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Work Experience</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">Partner placements, site visits, and community projects translate classroom learning into tangible portfolio pieces.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <p class="text-sm font-semibold text-brand uppercase tracking-wide">Impact stories</p>
+        <h2 class="text-3xl font-bold text-slate-900 mb-8">Real progress for real people</h2> <!-- Reduced margin here -->
+
+        <div class="grid lg:grid-cols-3 gap-10">
+          <!-- Stories -->
+          <div class="lg:col-span-2 space-y-6">
+            
+            <div class="space-y-6">
+              <!-- Story 1 -->
+              <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="h-10 w-10 rounded-full bg-brand/10 text-brand flex items-center justify-center">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-slate-900">Ayanda, 21</p>
+                    <p class="text-sm text-slate-600">Digital Literacy & Productivity Tools</p>
+                  </div>
+                </div>
+                <p class="text-slate-700 leading-relaxed">
+                  “Before joining the program, I struggled with basic computer tasks and online learning. 
+                  Through the digital literacy workshops and hands-on projects, I built my first portfolio and learned how to present myself professionally."
+                </p>
+              </div>
+      
+              <!-- Story 2 -->
+              <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="h-10 w-10 rounded-full bg-gold/20 text-brand flex items-center justify-center">
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-slate-900">Sipho, 23</p>
+                    <p class="text-sm text-slate-600">Information Technology Support</p>
+                  </div>
+                </div>
+                <p class="text-slate-700 leading-relaxed">
+                  “I had always been interested in tech but didn’t know where to start. The IT support program gave me hands-on experience troubleshooting hardware and software, and mentorship from industry professionals."
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Partner With Us -->
+          <div class="bg-brand text-white rounded-2xl p-8 shadow-xl">
+            <p class="text-sm font-semibold uppercase tracking-wide">Partner with us</p>
+            <h3 class="text-2xl font-bold mt-3 mb-4">Invest in youth talent</h3> <!-- Reduced margin here -->
+            <p class="text-brand-light mt-4">
+              Your support funds training materials, WiFi access, transport stipends, and mentors. Together, we open doors to meaningful, dignified work for young people.
+            </p>
+            <ul class="mt-6 space-y-3 text-brand-light text-sm">
+              <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Sponsor a learner cohort</li>
+              <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Host workplace shadow days</li>
+              <li class="flex gap-2"><i class="fa-solid fa-check text-gold mt-1"></i> Offer graduate placements</li>
+            </ul>
+            <a href="donate.html" class="mt-8 inline-flex items-center gap-2 bg-white text-brand px-5 py-3 rounded-full font-semibold shadow hover:-translate-y-0.5 transition">
+              Donate today <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+            
+      <section class="bg-brand-light">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-10">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+            <div>
+              <p class="text-sm font-semibold text-brand uppercase tracking-wide">Planned Programs & Courses</p>
+              <h2 class="text-3xl font-bold text-slate-900">Hands-On Accredited Training for Future-Ready Careers</h2>
+            </div>
+            <a href="courses.html" class="inline-flex items-center gap-2 text-brand font-semibold">
+              View more programs <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Program 1 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Information Technology Support</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Gain the skills to provide essential IT support, troubleshoot software and hardware issues, and assist users in maintaining their systems.
+              </p>
+            </div>
+            <!-- Program 2 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-gold/20 text-brand flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Cloud Computing Fundamentals</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Learn the basics of cloud computing, including the use of cloud services and platforms to store, manage, and process data in a virtual environment.
+              </p>
+            </div>
+            <!-- Program 3 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-shield-alt"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Cybersecurity Essentials</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Understand the fundamentals of cybersecurity, including network security, threat analysis, and how to protect systems from cyber threats.
+              </p>
+            </div>
+            <!-- Program 4 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Software Development Basics</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Learn the basics of software development, including coding, debugging, and creating functional applications using popular programming languages.
+              </p>
+            </div>
+            <!-- Program 5 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Networking and Infrastructure</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Develop practical skills in network configuration, maintenance, and troubleshooting, ensuring stable and secure infrastructure systems.
+              </p>
+            </div>
+            <!-- Program 6 -->
+            <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+              <div class="h-12 w-12 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-laptop"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-slate-900 mb-2">Digital Literacy & Productivity Tools</h3>
+              <p class="text-slate-700 text-sm leading-relaxed">
+                Master essential digital literacy skills and productivity tools such as word processing, spreadsheets, and presentations to succeed in the modern workplace.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Text Section (Left Side) -->
+            <div class="flex flex-col justify-center">
+              <p class="text-sm font-semibold text-brand uppercase tracking-wide">Accreditation & Global Partnerships</p>
+              <h2 class="text-3xl font-bold text-slate-900 mt-2">Globally Recognized Training with Leading Technology Partners</h2>
+              <p class="text-slate-700 text-lg mt-4">
+                At Ikamva Lethu, we offer internationally accredited training programs, giving students the skills they need to thrive in the global workforce. Our programs are supported by leading technology companies to ensure that our students gain access to the best resources and industry-standard knowledge.
+              </p>
+            </div>
+            
+            <!-- Logos Section (Right Side) -->
+            <div class="grid grid-cols-3 gap-6 mt-8 md:mt-0">
+              <!-- Google Logo -->
+              <div class="flex justify-center items-center">
+                <i class="fab fa-google fa-3x "></i>
+              </div>
+              <!-- Cisco Logo (SVG from local images folder) -->
+              <div class="flex justify-center items-center">
+                <img src="images/cisco.svg" alt="Cisco Logo" class="h-12 md:h-16 object-contain" />
+              </div>
+              <!-- Huawei Logo (SVG from local images folder) -->
+              <div class="flex justify-center items-center">
+                <img src="images/huawei.svg" alt="Huawei Logo" class="h-12 md:h-16 object-contain" />
+              </div>
+              <!-- AWS Logo -->
+              <div class="flex justify-center items-center">
+                <i class="fab fa-aws fa-3x "></i>
+              </div>
+              <!-- Microsoft Logo -->
+              <div class="flex justify-center items-center">
+                <i class="fab fa-microsoft fa-3x "></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-brand text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+          <div>
+            <h3 class="text-2xl font-bold">Ready to unlock your potential?</h3>
+            <p class="text-brand-light mt-2">Apply for our upcoming intakes or refer a friend today.</p>
+          </div>
+          <div class="flex gap-3">
+            <a href="registration.html" class="px-5 py-3 bg-gold text-slate-900 rounded-full font-semibold shadow-md hover:-translate-y-0.5 transition">Start registration</a>
+            <a href="courses.html" class="px-5 py-3 border border-white/60 rounded-full font-semibold hover:bg-white/10 transition">View courses</a>
+          </div>
+        </div>
+      </section>
+                        
+    </main>
+
+    <footer class="bg-white text-slate-900">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-4">
+    
+        <!-- Brand / About -->
+        <div class="md:col-span-2 space-y-5">
+          <div class="flex items-center gap-4">
+            <img 
+              src="images/logo.webp" 
+              alt="Ikamva Lethu Skills Center logo" 
+              class="h-28 w-auto object-contain"
+            >
+          </div>
+    
+          <p class="text-sm text-slate-600 max-w-xl leading-relaxed">
+            Ikamva Lethu Skills Center is committed to transforming rural communities through world-class skills development. With strong global partnerships and a mission-driven leadership team, we are positioned to become a powerful engine of opportunity for rural youth in South Africa.
+          </p>
+    
+        </div>
+    
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-slate-900 font-semibold mb-4">Explore</h4>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li><a href="about.html" class="hover:text-gold transition">About Us</a></li>
+            <li><a href="courses.html" class="hover:text-gold transition">Courses</a></li>
+            <li><a href="registration.html" class="hover:text-gold transition">Registration</a></li>
+            <li><a href="donate.html" class="hover:text-gold transition">Donate</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition">Contact</a></li>
+          </ul>
+        </div>
+    
+        <!-- Contact -->
+        <div>
+          <h4 class="text-slate-900 font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li class="flex gap-3">
+              <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+              <span>Ngubezulu Primary School Ku Hala, Butter Worth, Eastern Cape</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-envelope text-gold mt-1"></i>
+              <span>info@ikamvalethu.org</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-phone text-gold mt-1"></i>
+              <span>+27 12 345 6789</span>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    
+      <!-- Bottom Bar -->
+      <div class="border-t border-slate-200 py-4 text-center text-sm text-slate-500">
+        © <span id="year"></span> Ikamva Lethu Skills Center. All rights reserved.
+      </div>
+    </footer>
+    
+      </div>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const current = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-link').forEach(link => {
+      if (link.getAttribute('href') === current) {
+        link.classList.add('text-brand', 'font-semibold');
+      }
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ikamva Lethu Skills Center | Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-bY6I0n8B6S1c8x3a1oGVOlJawVSdGInxjeRGna43EIBgzHuLlHotE5RX7V6czS4QhIwTZPIYOvTo95OfzmiGAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: '#0f4c81',
+            gold: '#f2b705',
+            'brand-light': '#e8f1fb'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white text-slate-900">
+  <div class="min-h-screen flex flex-col">
+    <header class="border-b border-slate-200 bg-white/80 backdrop-blur-md sticky top-0 z-30">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/logo.webp" alt="Ikamva Lethu Skills Center logo" class="h-32 w-32 object-contain">
+        </a>
+        <nav>
+          <button id="nav-toggle" class="sm:hidden p-2 rounded-lg border border-slate-200 text-slate-700" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="nav-links" class="hidden sm:flex gap-6 font-medium text-sm items-center">
+            <li><a class="nav-link text-brand" href="index.html">Home</a></li>
+            <li><a class="nav-link hover:text-brand" href="about.html">About</a></li>
+            <li><a class="nav-link hover:text-brand" href="courses.html">Available Courses</a></li>
+            <li><a class="nav-link hover:text-brand" href="donate.html">Donate</a></li>
+            <li><a class="nav-link hover:text-brand" href="contact.html">Contact Us</a></li>
+            <li><a class="px-4 py-2 bg-gold text-slate-900 rounded-full shadow-sm hover:shadow-md transition" href="registration.html">Register Now</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="sm:hidden hidden border-t border-slate-200 bg-white">
+        <div class="px-4 py-3 space-y-3 text-sm font-medium">
+          <a class="block nav-link text-brand" href="index.html">Home</a>
+          <a class="block nav-link" href="about.html">About</a>
+          <a class="block nav-link" href="courses.html">Available Courses</a>
+          <a class="block nav-link" href="registration.html">Registration</a>
+          <a class="block nav-link" href="donate.html">Donate</a>
+          <a class="block nav-link" href="contact.html">Contact Us</a>
+          <a class="block text-center px-4 py-2 bg-gold text-slate-900 rounded-full shadow-sm" href="donate.html">Support</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-brand/10 via-white to-gold/10 pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 relative space-y-4">
+          <p class="text-sm font-semibold text-brand uppercase tracking-wide">Registration</p>
+          <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">Take the first step toward your new skills journey.</h1>
+          <p class="text-lg text-slate-700 max-w-3xl">Complete the form and our team will contact you within 2 working days to confirm your intake, share schedules, and guide you through any documents needed.</p>
+          <div class="flex gap-3 flex-wrap pt-2">
+            <span class="px-4 py-2 rounded-full bg-white border border-brand/20 text-brand text-sm font-semibold flex items-center gap-2"><i class="fa-solid fa-id-card"></i> ID copy required</span>
+            <span class="px-4 py-2 rounded-full bg-white border border-brand/20 text-brand text-sm font-semibold flex items-center gap-2"><i class="fa-solid fa-bus"></i> Transport support available</span>
+            <span class="px-4 py-2 rounded-full bg-white border border-brand/20 text-brand text-sm font-semibold flex items-center gap-2"><i class="fa-solid fa-clock"></i> Response in 48 hours</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 grid lg:grid-cols-3 gap-10 items-start">
+        <div class="lg:col-span-2 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-semibold text-slate-800 mb-2">Full name</label>
+                <input type="text" placeholder="Your name and surname" class="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20" required>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-800 mb-2">Email</label>
+                <input type="email" placeholder="you@example.com" class="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20" required>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-800 mb-2">Phone number</label>
+                <input type="tel" placeholder="+27 00 000 0000" class="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20" required>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-800 mb-2">Preferred course</label>
+                <select class="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm bg-white focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20" required>
+                  <option value="">Select a pathway</option>
+                  <option>Intro to Coding</option>
+                  <option>Drafting & Design</option>
+                  <option>Digital Design</option>
+                  <option>Renewable Energy Basics</option>
+                  <option>Community Care Assistant</option>
+                  <option>Career Readiness Lab</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-semibold text-slate-800 mb-2">Highest education level</label>
+                <select class="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm bg-white focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20" required>
+                  <option value="">Select</option>
+                  <option>Matric incomplete</option>
+                  <option>Matric</option>
+                  <option>Certificate/Diploma</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-800 mb-2">Availability</label>
+                <select class="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm bg-white focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20" required>
+                  <option value="">Select</option>
+                  <option>Weekdays - Mornings</option>
+                  <option>Weekdays - Afternoons</option>
+                  <option>Weekends</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-slate-800 mb-2">Tell us about your goals</label>
+              <textarea rows="4" placeholder="Share your interests, experience, or what you hope to achieve." class="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20"></textarea>
+            </div>
+            <div class="flex items-start gap-2">
+              <input id="consent" type="checkbox" class="mt-1 h-4 w-4 rounded border-slate-300 text-brand focus:ring-brand" required>
+              <label for="consent" class="text-sm text-slate-700">I consent to Ikamva Lethu contacting me about courses and understand my information will be kept confidential.</label>
+            </div>
+            <button type="submit" class="w-full sm:w-auto px-6 py-3 bg-brand text-white rounded-full font-semibold shadow-lg shadow-brand/20 hover:-translate-y-0.5 transition">Submit application</button>
+            <p class="text-xs text-slate-500">This form is for demonstration; connect with our team to finalize your application.</p>
+          </form>
+        </div>
+        <div class="bg-brand text-white rounded-2xl p-8 shadow-xl space-y-4">
+          <p class="text-sm font-semibold uppercase tracking-wide">Need help?</p>
+          <h2 class="text-2xl font-bold">We guide every applicant.</h2>
+          <p class="text-brand-light leading-relaxed">Our coordinators will confirm your documents, schedule, and any support needs like data or transport stipends.</p>
+          <ul class="space-y-3 text-brand-light text-sm">
+            <li class="flex gap-2"><i class="fa-solid fa-headset text-gold mt-1"></i> WhatsApp support: +27 12 345 6789</li>
+            <li class="flex gap-2"><i class="fa-solid fa-clock text-gold mt-1"></i> Response within 2 working days</li>
+            <li class="flex gap-2"><i class="fa-solid fa-clipboard-check text-gold mt-1"></i> Placement coaching included</li>
+          </ul>
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-brand px-5 py-3 rounded-full font-semibold shadow hover:-translate-y-0.5 transition">
+            Speak to the team <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white text-slate-900">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid gap-12 md:grid-cols-4">
+    
+        <!-- Brand / About -->
+        <div class="md:col-span-2 space-y-5">
+          <div class="flex items-center gap-4">
+            <img 
+              src="images/logo.webp" 
+              alt="Ikamva Lethu Skills Center logo" 
+              class="h-28 w-auto object-contain"
+            >
+          </div>
+    
+          <p class="text-sm text-slate-600 max-w-xl leading-relaxed">
+            Ikamva Lethu Skills Center is committed to transforming rural communities through world-class skills development. With strong global partnerships and a mission-driven leadership team, we are positioned to become a powerful engine of opportunity for rural youth in South Africa.
+          </p>
+    
+        </div>
+    
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-slate-900 font-semibold mb-4">Explore</h4>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li><a href="about.html" class="hover:text-gold transition">About Us</a></li>
+            <li><a href="courses.html" class="hover:text-gold transition">Courses</a></li>
+            <li><a href="registration.html" class="hover:text-gold transition">Registration</a></li>
+            <li><a href="donate.html" class="hover:text-gold transition">Donate</a></li>
+            <li><a href="contact.html" class="hover:text-gold transition">Contact</a></li>
+          </ul>
+        </div>
+    
+        <!-- Contact -->
+        <div>
+          <h4 class="text-slate-900 font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm text-slate-600">
+            <li class="flex gap-3">
+              <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+              <span>Ngubezulu Primary School Ku Hala, Butter Worth, Eastern Cape</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-envelope text-gold mt-1"></i>
+              <span>info@ikamvalethu.org</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-phone text-gold mt-1"></i>
+              <span>+27 12 345 6789</span>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    
+      <!-- Bottom Bar -->
+      <div class="border-t border-slate-200 py-4 text-center text-sm text-slate-500">
+        © <span id="year"></span> Ikamva Lethu Skills Center. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const current = location.pathname.split('/').pop() || 'registration.html';
+    document.querySelectorAll('.nav-link').forEach(link => {
+      if (link.getAttribute('href') === current) {
+        link.classList.add('text-brand', 'font-semibold');
+      }
+    });
+  </script>
+</body>
+</html>
+
